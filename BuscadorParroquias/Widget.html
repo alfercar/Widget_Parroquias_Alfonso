@@ -1,0 +1,59 @@
+<div >
+
+    <div>
+        <h1><b>Seleccione una provincia para comenzar</b></h1>
+        <hr>
+        <select data-dojo-attach-point="selectProvincia" data-dojo-attach-event="onChange:cargaConcellos"
+            style="display: block;" class="form-select form-select-sm" aria-label=".form-select-sm example">
+
+            <option value="-1">Seleccione la provincia</option>
+            <option value="15" text="A Coruña">A Coruña</option>
+            <option value="27" text="Ourense">Ourense</option>
+            <option value="32" text="Lugo">Lugo</option>
+            <option value="36" text="Pontevedra">Pontevedra</option>
+
+        </select>
+
+
+    </div>
+
+    <div><h2><b>Seleccione un concello o una parroquia y dele al botón de localizar</b></h2></div>
+    <hr>
+
+    <div data-dojo-attach-point="concellos"  class="divisores">
+
+        <label>Concello: </label>
+
+      
+        
+        
+        <select  data-dojo-attach-point="listaConcellos"
+        data-dojo-attach-event="onChange:cargaParroquias" class="form-select form-select-sm" aria-label=".form-select-sm example"></select > 
+
+        
+       
+        
+        <button class="btn btn-outline-primary btn-sm" data-dojo-attach-event="onClick:zoomConcello" style="border-radius: 100%;"><img src="widgets/BuscadorParroquias/images/lupa.png" alt="lupita" style="height: 15px;"></button>
+
+        
+
+    </div>
+    <br>
+    <br>
+
+    <div data-dojo-attach-point="parroquias" class="divisores" >
+        <label>Parroquia: </label>
+        <select  data-dojo-attach-point="listaParroquias" class="form-select form-select-sm" aria-label=".form-select-sm example"
+       ></select>
+        <button class="btn btn-outline-primary btn-sm" data-dojo-attach-event="onClick:zoomParroquia"  style="border-radius: 100%;"><img src="widgets/BuscadorParroquias/images/lupa.png" alt="lupita" style="height: 15px;"></button>
+
+    </div>
+
+
+
+
+
+
+
+
+</div>

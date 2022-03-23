@@ -1,0 +1,25 @@
+
+
+.jimu-widget-BuscadorParroquias div {
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+
+.jimu-widget-BuscadorParroquias .divisores {
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    
+
+}
+
+ 
+.jimu-widget-BuscadorParroquias label {
+    font-size: large;}
+
+
+
